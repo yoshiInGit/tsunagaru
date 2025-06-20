@@ -66,7 +66,7 @@ const CommunityPage = () => {
             {filteredItems.map((item) => (
               <div
                 key={item.id}
-                className="relative bg-white rounded-lg shadow-md overflow-hidden cursor-pointer transform transition duration-300 hover:scale-105 hover:shadow-lg"
+                className="h-72 relative bg-red-600 rounded-lg shadow-md overflow-hidden cursor-pointer transform transition duration-300 hover:scale-105 hover:shadow-lg"
                 onClick={() => handleBoxClick(item.id, item.altText)}
               >
                 <img
@@ -74,9 +74,6 @@ const CommunityPage = () => {
                   alt={item.altText}
                   className="w-full h-auto object-cover"
                 />
-                <div className="absolute inset-0 bg-black bg-opacity-0 hover:bg-opacity-20 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-                  <p className="text-white text-lg font-bold">{item.altText}</p>
-                </div>
               </div>
             ))}
           </div>
