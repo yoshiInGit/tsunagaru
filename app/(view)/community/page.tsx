@@ -1,6 +1,7 @@
 "use client"
 import { Search } from 'lucide-react';
 import React, { useState } from 'react';
+import NavBar from '../module/NavBar';
 
 // 開発用のためのギャラリーアイテムの型定義
 // ここでは、画像のURLと代替テキストを含むオブjectを定義しています。
@@ -82,6 +83,8 @@ const CommunityPage = () => {
           )}
         </div>
       </main>
+
+      <NavBar/>
     </div>
   );
 }
